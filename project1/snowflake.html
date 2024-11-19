@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koch Snowflake</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+        }
+
+        canvas {
+            display: block;
+            margin: 20px 0;
+            border: 2px solid #333;
+            background-color: #111;
+            max-width: 90%;
+            max-height: 70%;
+            z-index: 1;
+        }
+
+        h1 {
+            position: absolute;
+            top: 10px;
+            z-index: 2;
+            color: #c6fbff; /* Snowflake color */
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .controls button {
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .controls button:hover {
+            background-color: #555;
+        }
+
+        .controls span {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tejas Bhadoria, CS-435, Project#1 (Koch Snowflake)</h1>
+    <canvas id="glCanvas"></canvas>
+
+    <div class="controls">
+        <button id="decrease">-</button>
+        <span id="iterationCount">Iterations: 0</span>
+        <button id="increase">+</button>
+    </div>
+
+    <script src="snowflake.js"></script>
+</body>
+</html>

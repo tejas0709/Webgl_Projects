@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tejas Bhadoria, CS 435, Project #7</title>
+    <style>
+        canvas {
+            width: 100vw;
+            height: 100vh;
+            display: block;
+        }
+        #controls {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="glCanvas"></canvas>
+    <div id="controls">
+        <h3>Controls:</h3>
+        <p>Mouse drag - Rotate camera</p>
+        <p>Scroll - Zoom in/out</p>
+        <p>Space - Pause/Resume animation</p>
+        <p>*Not to scale</p>      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"></script>
+    <script src="assets.js"></script>
+    <script src="project7.js"></script>
+</body>
+</html>

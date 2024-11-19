@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tejas Bhadoria, CS435, Project #4</title>
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+            background-color: #fdfdfd;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <label for="spotlightPosition">Select Spotlight Position:</label>
+    <select id="spotlightPosition">
+        <option value="0">Off</option>
+        <option value="1">Position 1</option>
+        <option value="2">Position 2</option>
+        <option value="3">Position 3</option>
+        <option value="4">Position 4</option>
+        <option value="5">Position 5</option>
+    </select>
+
+    <label for="cameraPosition">Select Camera Position:</label>
+    <select id="cameraPosition">
+        <option value="Z">Default</option>
+        <option value="A">Position A</option>
+        <option value="B">Position B</option>
+        <option value="C">Position C</option>
+        <option value="D">Position D</option>
+        <option value="E">Position E</option>
+        <option value="F">Position F</option>
+    </select>
+
+    <button id="increaseCutoff">Increase Cutoff</button>
+    <button id="decreaseCutoff">Decrease Cutoff</button>
+    <br>
+
+    <button id="moveLeft">Move Left</button>
+    <button id="moveRight">Move Right</button>
+    <button id="moveUp">Move Up</button>
+    <button id="moveDown">Move Down</button>
+
+    <canvas id="webglCanvas" width="1250" height="460"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"></script>
+    <script src="spotlight.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tejas Bhadoria, CS-435, Project #6</title>
+    <style>
+        canvas {
+            width: 90vw;
+            height: 90vh;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="webgl-canvas"></canvas>
+
+    <button id="power-button">Power On/Off</button>
+    <button id="play-pause-button">Play/Pause</button>
+    <button id="next-button">Next Frame</button>
+    <button id="prev-button">Previous Frame</button>
+    <button id="toggleButton">Remove Ball</button>
+    <h2>Use mouse click and drag to rotate the view and scroll up and down to zoom in and out</h2>
+
+    <video id="tv-video" style="display: none;" loop></video>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"></script>
+    <script src="assets.js"></script>
+    <script src="blending.js"></script>
+    
+    
+</body>
+</html>
